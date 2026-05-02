@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hello CircleCI</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f0f0f;
+      font-family: 'Courier New', monospace;
+      color: #f0f0f0;
+    }
+
+    .card {
+      text-align: center;
+      padding: 3rem 4rem;
+      border: 1px solid #333;
+      background: #1a1a1a;
+      border-radius: 4px;
+      max-width: 480px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    button#reveal-btn {
+      background: #00d4a4;
+      color: #0f0f0f;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-family: inherit;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    button#reveal-btn:hover { background: #00ffca; }
+    button#reveal-btn:active { transform: scale(0.97); }
+
+    #message {
+      margin-top: 1.8rem;
+      font-size: 1.1rem;
+      color: #00d4a4;
+      letter-spacing: 0.05em;
+      min-height: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    #message.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>CircleCI Challenge</h1>
+    <button id="reveal-btn">Click Me</button>
+    <p id="message">Hello from CircleCI! 🚀</p>
+  </div>
+
+  <script>
+    document.getElementById('reveal-btn').addEventListener('click', function () {
+      var msg = document.getElementById('message');
+      msg.classList.add('visible');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "circleci-challenge",
+  "version": "1.0.0",
+  "description": "CircleCI Support Engineer Technical Challenge - Part 1",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0"
+  }
+}
