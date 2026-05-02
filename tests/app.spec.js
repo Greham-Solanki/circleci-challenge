@@ -24,5 +24,5 @@ test('clicking the button reveals the message', async ({ page }) => {
   await expect(message).toHaveCSS('opacity', '1', { timeout: 2000 });
 
   // Verify the text content
-  await expect(message).toContainText('Hello from CircleCI!');
+  await expect(message).toContainText('Hello from Greham!');
 });
