@@ -1,4 +1,4 @@
-# CircleCI Support Engineer Challenge — Part 1
+# CircleCI Support Engineer Challenge: Part 1
 
 A minimal web app with a button interaction, tested with Playwright and built on CircleCI.
 
