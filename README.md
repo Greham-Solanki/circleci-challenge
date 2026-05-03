@@ -4,7 +4,7 @@ A minimal web app with a button interaction, tested with Playwright and built on
 
 ## App
 
-Open `index.html` in a browser. Click the **Click Me** button — a message appears.
+Open `index.html` in a browser. Click the **Click Me** button, A message appears.
 
 ## Tests
 
