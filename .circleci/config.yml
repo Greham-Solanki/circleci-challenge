@@ -18,6 +18,8 @@ jobs:
       - store_artifacts:
           path: playwright-report
           destination: playwright-report
+      - store_test_results:
+          path: test-results
 
 workflows:
   build-and-test:
